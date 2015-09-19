@@ -6,9 +6,12 @@ function setup() {
 function draw() {
 	// Color the background
 	background(150, 0, 0);
+	//Set fill and stroke color
 	noFill();
 	stroke(255);
+	// draw a circlr
 	ellipse(mouseX, mouseY, 40, 40);
+	// draw the lines
 	line(mouseX + 20, mouseY, mouseX + 1000, mouseY)
 	line(mouseX - 20, mouseY, mouseX - 1000, mouseY)
 	line(mouseX, mouseY + 20, mouseX, mouseY + 1000)
