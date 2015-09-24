@@ -7,6 +7,10 @@ function setup() {
 
 function draw() {
 	background(0);
+
+	var i;
+	i = random(-3, 3);
 	fill(255, 255, 255);
-	ellipse(mouseX, mouseY, 100, 100);
+	ellipse(mouseX + i, mouseY + i, 100, 100);
+
 }
