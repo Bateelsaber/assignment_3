@@ -11,6 +11,6 @@ function draw() {
 	var i;
 	i = random(-3, 3);
 	fill(255, 255, 255);
-	ellipse(mouseX + i, mouseY + i, 100, 100);
+	ellipse(mouseX + i, mouseY + i, 50, 50);
 
 }
