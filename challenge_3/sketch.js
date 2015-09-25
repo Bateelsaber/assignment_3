@@ -6,6 +6,9 @@ function setup() {
 function draw() {
 	// Color the background
 	background(150, 0, 0);
+	if (mouseIsPressed) {
+		background(68, 65, 172);
+	}
 	//Set fill and stroke color
 	noFill();
 	stroke(255);
