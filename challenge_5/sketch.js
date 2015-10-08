@@ -1,3 +1,9 @@
+var BallX = 100
+var BallY = 200
+var SpeedBallX = 2.5
+var SpeedBallY = 2.5
+
+
 function setup() {
 	// create a place to draw
 	createCanvas(640, 360);
@@ -6,11 +12,25 @@ function setup() {
 }
 
 function draw() {
+
+	if (BallX > mouseX) {
+		BallX = BallX - SpeedBallX;
+
+	}
+	if (mouseX > BallX) {
+		BallX = BallX + SpeedBallX;
+	}
+	if (BallY > mouseY) {
+		BallY = BallY - SpeedBallY;
+
+	}
+	if (mouseY > BallY) {
+		BallY = BallY + SpeedBallY
+
+	}
+
 	background(0);
 
-	var i;
-	i = random(-3, 3);
-	fill(255, 255, 255);
-	ellipse(mouseX + i, mouseY + i, 50, 50);
+	ellipse(BallX, BallY, 50, 50);
 
 }
