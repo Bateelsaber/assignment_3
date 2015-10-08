@@ -2,8 +2,8 @@ var ballX = 200;
 var ballY = 100;
 var ballSpeedX = 4;
 var ballSpeedY = 4;
-var ballXa = 100;
-var ballYa = 100;
+var ballXa = 500;
+var ballYa = 250;
 var ballSpeedXa = 4;
 var ballSpeedYa = 4;
 
@@ -61,6 +61,6 @@ function draw() {
 
 	background(0);
 	ellipse(ballX, ballY, 50, 50);
-	ellipse(ballXa + 300, ballYa + 150, 50, 50);
+	ellipse(ballXa - 100, ballYa, 50, 50);
 
 }
